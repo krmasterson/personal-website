@@ -1,3 +1,6 @@
+body {
+  background-color: #0e2c2d;
+}
 
 .banner {
   background-size: cover;
@@ -25,7 +28,8 @@
 }
 
 .btn-ghost:hover {
-  opacity: 1;
+  opacity: 0.7;
+  color: white;
 }
 
 #center-home {
@@ -36,9 +40,9 @@
 }
 
 .container {
-  background-color: #0e2c2d;
   max-width: 100%;
 }
+
 .info {
   padding: 85px;
   display: grid;
@@ -168,7 +172,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
 .form {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -187,4 +190,15 @@ input[type=submit]:hover {
 .submit-btn {
   position: relative;
   left: 40%;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.about-me p {
+  color: white;
+  width: 60%;
 }
