@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="banner" id="center-home" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.0)), url(./images/background-3.jpeg);">
+  <div class="content">
+    <h1>I am <span class="type"></span></h1>
+    <script>
+      var typed = new Typed('.type', {
+          strings: ['a Designer', ' a Developer', 'Kyle'],
+          typeSpeed: 50,
+          backSpeed: 80,
+          loop: true,
+          backDelay: 900,
+      });
+    </script>
+  </div>
+  <a href="#contact-me" class="btn btn-ghost">Contact Me</a>
+  <div class="scroll-down">
+    <p>Click the arrow to learn more</p>
+    <a href="#portfolio"><i class="fas fa-angle-double-down"></i></i></a>
+  </div>
+</div>
+<div class="container">
+  <div class="info" id="portfolio">
+    <div class="card-product">
+      <a class="card-block text-decoration-none" href="http://www.rentie.ca/users/sign_in">
+        <img src="./images/rentie.jpeg" />
+        <div class="card-product-infos">
+          <h2>Rentie.ca</h2>
+          <p>Rentie is a Ruby on Rails app my team and I built over a 2 week period. The app is built using Ruby on Rails, Javascript, Html, and CSS. It allows property owners to manage their daily tasks and contact list, view their finances as a whole and also sorted by individual building, and add or delete a building or unit from their profile. The tenant side of the app allows tenants to submit maintenance requests directly to the property owner and pay their rent online using a secure payment platform.</p>
+        </div>
+      </a>
+    </div>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2>Product name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore nesciunt illum distinctio unde. Ipsa nam, soluta quos vitae temporibus nihil dolores perspiciatis quidem, asperiores explicabo magnam similique, illum quas</p>
+      </div>
+    </div>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2>Product name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore nesciunt illum distinctio unde. Ipsa nam, soluta quos vitae temporibus nihil dolores perspiciatis quidem, asperiores explicabo magnam similique, illum quas</p>
+      </div>
+    </div>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2>Product name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore nesciunt illum distinctio unde. Ipsa nam, soluta quos vitae temporibus nihil dolores perspiciatis quidem, asperiores explicabo magnam similique, illum quas</p>
+      </div>
+    </div>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2>Product name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore nesciunt illum distinctio unde. Ipsa nam, soluta quos vitae temporibus nihil dolores perspiciatis quidem, asperiores explicabo magnam similique, illum quas</p>
+      </div>
+    </div>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2>Product name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore nesciunt illum distinctio unde. Ipsa nam, soluta quos vitae temporibus nihil dolores perspiciatis quidem, asperiores explicabo magnam similique, illum quas</p>
+      </div>
+    </div>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2>Product name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore nesciunt illum distinctio unde. Ipsa nam, soluta quos vitae temporibus nihil dolores perspiciatis quidem, asperiores explicabo magnam similique, illum quas</p>
+      </div>
+    </div>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+      <div class="card-product-infos">
+        <h2>Product name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore nesciunt illum distinctio unde. Ipsa nam, soluta quos vitae temporibus nihil dolores perspiciatis quidem, asperiores explicabo magnam similique, illum quas</p>
+      </div>
+    </div>
+  </div>
+  <div class="contact" id="contact-me">
+    include your email and a message here:
+    <div class="form">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit" class="submit-btn">
+
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
