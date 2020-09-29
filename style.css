@@ -5,7 +5,7 @@
 .banner {
   padding: 220px 0;
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.1), rgba(126, 128, 130, 0.3)), url('./images/background-5.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 130, 0.3)), url('./images/background-5.jpg');
   background-size: cover;
 }
 
