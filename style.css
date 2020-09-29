@@ -1,11 +1,12 @@
-body {
-  background-color: #0e2c2d;
-}
+/*body {
+  background-color: #0e3538;
+}*/
 
 .banner {
-  background-size: cover;
   padding: 220px 0;
   height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.1), rgba(126, 128, 130, 0.3)), url('./images/background-5.jpg');
+  background-size: cover;
 }
 
 .banner h1 {
@@ -17,19 +18,19 @@ body {
 }
 
 .btn-ghost {
-  color: white;
-  border: 1px solid white;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
   transition: opacity 0.3s ease;
-  position: absolute;
-  top: 65%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn-ghost:hover {
-  opacity: 0.7;
+  opacity: 0.9;
   color: white;
+  background-color: cornflowerblue;
 }
 
 #center-home {
@@ -41,20 +42,31 @@ body {
 
 .container {
   max-width: 100%;
+  padding: 0px;
 }
 
 .info {
-  padding: 85px;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info h2 {
+  margin: 25px;
+  color: cornflowerblue;
+}
+.cards {
+  padding: 0px 60px 60px 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: -30px;
 }
 
 .card-product {
   overflow: hidden;
   height: 150px;
   line-height: 1;
-  background: white;
+  background: #f3f3f3;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -70,24 +82,26 @@ body {
   padding: 10px;
 }
 
-
 .card-product img {
   height: 100%;
   width: 120px;
   object-fit: cover;
 }
 
-.card-product h2 {
+.card-product h3 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card-product p {
   font-size: 12px;
-  opacity: .7;
+  opacity: .9;
   margin-bottom: 0;
   margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 .card-product .card-product-infos {
@@ -109,96 +123,129 @@ body {
 
 .scroll-down p {
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card-product a {
   color: black;
 }
 
-@-webkit-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 1; }
-  50.01% { opacity: 0; }
-  100% { opacity: 0; }
-}
-@-moz-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 1; }
-  50.01% { opacity: 0; }
-  100% { opacity: 0; }
-}
-@-ms-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 1; }
-  50.01% { opacity: 0; }
-  100% { opacity: 0; }
-}
-@-o-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 1; }
-  50.01% { opacity: 0; }
-  100% { opacity: 0; }
-}
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 1; }
-  50.01% { opacity: 0; }
-  100% { opacity: 0; }
-}
-
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 30px;
-  width: 60%;
-  margin-bottom: 25px;
-  padding-bottom: 10px;
-}
-
-.contact {
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 
-.submit-btn {
-  position: relative;
-  left: 40%;
-}
-
-.about-me {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+.about-me h2 {
+  color: cornflowerblue;
+  margin-top: 20px
 }
 
 .about-me p {
-  color: white;
+  color: gray;
   width: 60%;
+  font-size: 20px;
+}
+
+.content h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.type {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.3);
+  padding: 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.footer-links a:hover {
+  color: cornflowerblue;
+}
+
+.scroll-down a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+h2 {
+  color: white;
+}
+
+.contact-me h4 {
+  color: white;
+}
+
+.top-half {
+  background-color: whitesmoke;
+}
+
+.navbar {
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 0px;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid cornflowerblue;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+}
+
+li {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.anchor-one {
+  display: block;
+  height: 180px;
+  margin-top: -180px;
+  visibility: hidden;
+}
+
+.anchor-two {
+  display: block;
+  height: 63px;
+  margin-top: -63px;
+  visibility: hidden;
+}
+
+.anchor-three {
+  display: block;
+  height: 340px;
+  margin-top: -340px;
+  visibility: hidden;
 }
