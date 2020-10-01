@@ -59,12 +59,12 @@
 .cards {
   padding: 0px 60px 60px 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .card-product {
   overflow: hidden;
-  height: 150px;
+  height: 350px;
   line-height: 1;
   background: #f3f3f3;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -73,6 +73,8 @@
   margin: 10px;
   border-radius: 7px;
   padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card-block {
@@ -84,29 +86,34 @@
 
 .card-product img {
   height: 100%;
-  width: 120px;
+  width: 655px;
   object-fit: cover;
+  margin-left: 20px;
 }
 
 .card-product h3 {
-  font-size: 16px;
+  font-size: 26px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 25px 0;
   font-family: 'Poppins', sans-serif;
 }
 
 .card-product p {
-  font-size: 12px;
   opacity: .9;
-  margin-bottom: 0;
-  margin-top: 8px;
+  margin: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
-.card-product .card-product-infos {
+.card-product-infos {
   padding: 16px;
+  border-right: 1px solid gray;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .scroll-down {
   position: absolute;
@@ -128,6 +135,7 @@
 
 .card-product a {
   color: black;
+  height: 100%;
 }
 
 .about-me {
@@ -248,4 +256,26 @@ li {
   height: 340px;
   margin-top: -340px;
   visibility: hidden;
+}
+
+#odd-cards img {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+#odd-cards .card-product-infos {
+  border-right: none;
+  border-left: 1px solid gray;
+}
+
+@media screen and (min-width: 1001px) {
+  .card-product p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-product p {
+    font-size: 12px;
+  }
 }
